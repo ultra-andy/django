@@ -154,6 +154,7 @@ class CursorDebugWrapper(CursorWrapper):
                 sql,
                 params,
                 self.db.alias,
+                exc_info=sys.exc_info(),
                 extra={
                     "duration": duration,
                     "sql": sql,
