@@ -2,7 +2,7 @@ import datetime
 import decimal
 import functools
 import logging
-import sys
+#import sys
 import time
 import warnings
 from contextlib import contextmanager
@@ -155,7 +155,7 @@ class CursorDebugWrapper(CursorWrapper):
                 sql,
                 params,
                 self.db.alias,
-                exc_info=sys.exc_info(),
+                #exc_info=sys.exc_info(),
                 extra={
                     "duration": duration,
                     "sql": sql,
